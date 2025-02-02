@@ -3,6 +3,7 @@ using Ebac.Core.Singleton;
 using TMPro;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 
 public class PlayerController : Singleton<PlayerController>
 {   
@@ -28,6 +29,10 @@ public class PlayerController : Singleton<PlayerController>
     private Vector3 _startPosition;
 
     public bool invencible = false;
+
+    [Header("Coin Setup")]
+    public GameObject coinCollector;
+
 
     private void Start()
     {
@@ -93,7 +98,27 @@ public class PlayerController : Singleton<PlayerController>
     {
         invencible = b;
     }
-    #endregion
 
+    public void ChangeHeight(float amount, float duration, float animationDuration, Ease ease)
+    {
+        /*var p = transform.position;
+        p.y = _startPosition.y + amount;
+        transform.position = p;*/
+
+        transform.DOMoveY(_startPosition.y + amount,animationDuration).SetEase(ease);
+        //.OnComplete(ResetHeight);a
+        Invoke(nameof(ResetHeight), duration);
+    }
+
+    public void ResetHeight()
+    {
+        transform.DOMoveY(_startPosition.y, .1f);
+    }
+
+    public void ChangeCoinCollectorSize(float amount)
+    {
+        coinCollector.transform.localScale = Vector3.one * amount;
+    }
+    #endregion
 }
 
