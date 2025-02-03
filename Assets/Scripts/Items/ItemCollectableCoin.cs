@@ -17,8 +17,8 @@ public class ItemCollectableCoin : ItemColletableBase
 
     protected override void OnCollect()
     {
-        OnCollect();
-        ItemsManager.instance.AddCoins();
+        //OnCollect();
+        //ItemsManager.instance.AddCoins();
         collider.enabled = false;
         collect = true;
         //PlayerController.instance.Bounce();

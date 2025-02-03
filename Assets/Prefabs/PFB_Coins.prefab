@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6600418872181025335}
   - component: {fileID: 9193413030422958493}
   - component: {fileID: 3416249763634172167}
-  - component: {fileID: 767956386488467122}
   - component: {fileID: 3101690710741348939}
   m_Layer: 0
   m_Name: Sphere
@@ -88,27 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &767956386488467122
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2175401046161034571}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.7
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3101690710741348939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,6 +115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4893726358800714155}
   - component: {fileID: 4380310114761377071}
+  - component: {fileID: 3130306847629624796}
   m_Layer: 0
   m_Name: PFB_Coins
   m_TagString: Untagged
@@ -178,4 +157,28 @@ MonoBehaviour:
   graphicItem: {fileID: 2175401046161034571}
   audioSource: {fileID: 0}
   audioSource2: {fileID: 0}
-  collider: {fileID: 767956386488467122}
+  collider: {fileID: 3130306847629624796}
+  collect: 0
+  lerp: 5
+  minDistance: 1
+--- !u!135 &3130306847629624796
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7341148061231671982}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}

@@ -549,7 +549,7 @@ MonoBehaviour:
   compareTag: Player
   particleSystem: {fileID: 0}
   timeToHide: 3
-  graphicItem: {fileID: 287937321}
+  graphicItem: {fileID: 911661892}
   audioSource: {fileID: 0}
   audioSource2: {fileID: 0}
   duration: 2
@@ -2122,6 +2122,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6710c24cf1b42f4f84616ef9d153434, type: 3}
+--- !u!1 &911661892 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8571395857152318861, guid: e2ddf41a608fc724a87c7392a3818036, type: 3}
+  m_PrefabInstance: {fileID: 287937320}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &943628340
 GameObject:
   m_ObjectHideFlags: 0
@@ -3181,7 +3186,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3194,7 +3199,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597190826}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
