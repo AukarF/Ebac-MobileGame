@@ -1015,7 +1015,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 990309231306731843, guid: 513b2ea4a766da5458a22bc3400be132, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2342662474021189406, guid: 513b2ea4a766da5458a22bc3400be132, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1533,14 +1533,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 23267194}
   lerpSpeed: 9
-  speed: 5
+  speed: 9
   tagToCheckEnemy: Enemy
   tagToCheckEndLine: EndLine
   endScreen: {fileID: 1977585271}
   uiTextPowerUp: {fileID: 2108500239}
+  invencible: 0
   coinCollector: {fileID: 1597190826}
   animationManager: {fileID: 93916184}
-  invencible: 0
 --- !u!1 &465361334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2031,7 +2031,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 990309231306731843, guid: 513b2ea4a766da5458a22bc3400be132, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2342662474021189406, guid: 513b2ea4a766da5458a22bc3400be132, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3519,7 +3519,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 990309231306731843, guid: 513b2ea4a766da5458a22bc3400be132, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2342662474021189406, guid: 513b2ea4a766da5458a22bc3400be132, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4423,7 +4423,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 990309231306731843, guid: 513b2ea4a766da5458a22bc3400be132, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2342662474021189406, guid: 513b2ea4a766da5458a22bc3400be132, type: 3}
       propertyPath: m_LocalPosition.x

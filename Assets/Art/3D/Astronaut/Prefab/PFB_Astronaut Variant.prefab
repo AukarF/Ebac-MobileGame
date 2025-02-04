@@ -145,8 +145,11 @@ MonoBehaviour:
   animationSetups:
   - type: 0
     trigger: idle
+    speed: 1
   - type: 1
     trigger: run
+    speed: 1
   - type: 2
     trigger: death
+    speed: 1.5
   animator: {fileID: 7193805671317595757}
