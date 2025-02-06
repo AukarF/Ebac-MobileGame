@@ -13,12 +13,12 @@ public class PowerUpHeight : PowerUpBase
     protected override void StartPowerUp()
     {
         base.StartPowerUp();
-        PlayerController.instance.ChangeHeight(amountHeight, duration, animationDuration, ease);
+        PlayerController.Instance.ChangeHeight(amountHeight, duration, animationDuration, ease);
     }
 
     protected override void EndPowerUp()
     {
         base.EndPowerUp();
-        PlayerController.instance.ResetHeight();
+        PlayerController.Instance.ResetHeight();
     }
 }

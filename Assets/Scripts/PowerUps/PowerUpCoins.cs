@@ -9,11 +9,11 @@ public class PowerUpCoins : PowerUpBase
     protected override void StartPowerUp()
     {
         base.StartPowerUp();
-        PlayerController.instance.ChangeCoinCollectorSize(sizeAmount);
+        PlayerController.Instance.ChangeCoinCollectorSize(sizeAmount);
     }
     protected override void EndPowerUp()
     {
         base.EndPowerUp();
-        PlayerController.instance.ChangeCoinCollectorSize(1);
+        PlayerController.Instance.ChangeCoinCollectorSize(1);
     }
 }

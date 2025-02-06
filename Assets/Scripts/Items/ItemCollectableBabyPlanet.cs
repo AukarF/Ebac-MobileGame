@@ -6,7 +6,7 @@ public class ItemCollectableBabyPlanet : ItemColletableBase
     protected override void OnCollect()
     {
         base.OnCollect();
-        ItemsManager.instance.AddBabyPlanets();
+        ItemsManager.Instance.AddBabyPlanets();
         collider.enabled = false;
     }
 }

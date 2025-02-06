@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 90db49dbcb445c849b103bb0e7f8013b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1473,6 +1473,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779011707}
   m_CullTransparentMesh: 1
+--- !u!1 &785030750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 785030752}
+  - component: {fileID: 785030751}
+  m_Layer: 0
+  m_Name: ArtManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &785030751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785030750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b9785a177a03b42ab726a7b8d7eb36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  artSetups:
+  - artType: 0
+    gameObject: {fileID: 881760173335927063, guid: 6dec32d9c9777494e87e4878df38ad30, type: 3}
+  - artType: 1
+    gameObject: {fileID: 4149684176012387095, guid: 320bf856d2b5c7143b7ea53e5c886ca5, type: 3}
+--- !u!4 &785030752
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785030750}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.581414, y: -6.476124, z: 20.173016}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,19 +1679,11 @@ MonoBehaviour:
   levels:
   - {fileID: 4810808331777152704, guid: 10b9b6bf83c43e0418c6a3594d90d5c1, type: 3}
   - {fileID: 4810808331777152704, guid: 80321684f16c4df4cac38e2483747348, type: 3}
+  levelPieceBasedSetups:
+  - {fileID: 11400000, guid: 9a8766e6bc17b05469fd19c6d4030a2d, type: 2}
+  - {fileID: 11400000, guid: 0d32f27b5e75bf94ea9975e5715e4f15, type: 2}
   _index: 1
-  levelsPiecesStart:
-  - {fileID: 4685101474941336167, guid: 94124ccd94a90414795b92cc9f1c0bc5, type: 3}
-  levelsPieces:
-  - {fileID: 4685101474941336167, guid: 0923f05b1c359d7469bb91c67a115611, type: 3}
-  - {fileID: 372026048013070921, guid: c3d31f80b78b55946b0e242dd92f8d41, type: 3}
-  levelsPiecesEnd:
-  - {fileID: 4685101474941336167, guid: fc894e6d21d8e5a438d056e5d7d9a297, type: 3}
-  pieceStartNumber: 1
-  pieceNumber: 5
-  pieceEndNumber: 1
   timeBetweenPieces: 0.3
-  _spawnedPieces: []
 --- !u!4 &1150482580
 Transform:
   m_ObjectHideFlags: 0
@@ -2543,3 +2584,4 @@ SceneRoots:
   - {fileID: 2600872025726912630}
   - {fileID: 327522938}
   - {fileID: 1150482580}
+  - {fileID: 785030752}
