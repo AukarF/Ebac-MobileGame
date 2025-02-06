@@ -1151,6 +1151,7 @@ MonoBehaviour:
   invencible: 0
   coinCollector: {fileID: 1597190826}
   animationManager: {fileID: 93916184}
+  _bounceHelper: {fileID: 459523513}
 --- !u!114 &459523513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1163,9 +1164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13b15dc8732940543967e7575be50914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleDuration: 0.05
+  scaleDuration: 0.1
   scaleBounce: 1.2
-  ease: 27
+  ease: 28
 --- !u!1 &465361334
 GameObject:
   m_ObjectHideFlags: 0

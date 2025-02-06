@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9193413030422958493}
   - component: {fileID: 3416249763634172167}
   - component: {fileID: 3101690710741348939}
+  - component: {fileID: 927321810200141006}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -105,6 +106,21 @@ MonoBehaviour:
   graphicItem: {fileID: 2175401046161034571}
   audioSource: {fileID: 0}
   audioSource2: {fileID: 0}
+--- !u!114 &927321810200141006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2175401046161034571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dba5099a98a3c644d9c282e710e81492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1
+  startColor: {r: 1, g: 1, b: 1, a: 1}
+  meshRenderer: {fileID: 3416249763634172167}
 --- !u!1 &7341148061231671982
 GameObject:
   m_ObjectHideFlags: 0
