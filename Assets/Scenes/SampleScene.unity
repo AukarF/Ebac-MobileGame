@@ -1398,6 +1398,62 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &733466721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 733466723}
+  - component: {fileID: 733466722}
+  m_Layer: 0
+  m_Name: ColorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &733466722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733466721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3197143b25f62cd4dbe49fda8acbf7ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 2100000, guid: 0bb44c180b9691044a6468ecac78bfe2, type: 2}
+  - {fileID: 2100000, guid: 891f290e07444864ca3375dc6208fadc, type: 2}
+  colorSetups:
+  - artType: 0
+    colors:
+    - {r: 0.40504023, g: 0.9245283, b: 0.004360993, a: 0}
+    - {r: 0.9433962, g: 0.6895248, b: 0.013349922, a: 0}
+  - artType: 1
+    colors:
+    - {r: 1, g: 0, b: 0.48650503, a: 0}
+    - {r: 0.07943219, g: 0.113784485, b: 0.990566, a: 0}
+--- !u!4 &733466723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733466721}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3055458, y: -6.9443626, z: 17.07575}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &779011707
 GameObject:
   m_ObjectHideFlags: 0
@@ -2585,3 +2641,4 @@ SceneRoots:
   - {fileID: 327522938}
   - {fileID: 1150482580}
   - {fileID: 785030752}
+  - {fileID: 733466723}
