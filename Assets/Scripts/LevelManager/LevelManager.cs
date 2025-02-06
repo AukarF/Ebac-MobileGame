@@ -83,6 +83,10 @@ public class LevelManager : MonoBehaviour
             StartCoroutine(createLevelPiecesCoroutine());
 
             _spawnedPieces = new List<LevelPieceBase>();
+
+
+        ColorManager.Instance.ChangeColorByType(_currentSetup.artType);
+    
     }
 
 
