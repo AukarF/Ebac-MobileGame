@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Ebac.Core.Singleton;
 
 public class ItemCollectableCoin : ItemColletableBase
 {
@@ -9,20 +10,29 @@ public class ItemCollectableCoin : ItemColletableBase
     public float lerp = 5f;
     public float minDistance = 1f;
 
+
+
     private void Start()
     {
-        //CoinsAnimationManager.Instance.RegisterCoin(this);
+        CoinsAnimationManager.Instance.RegisterCoin(this);
     }
 
 
     protected override void OnCollect()
     {
-        //OnCollect();
-        //ItemsManager.instance.AddCoins();
+        base.OnCollect();
         collider.enabled = false;
         collect = true;
-        //PlayerController.instance.Bounce();
+        PlayerController.Instance.Bounce();
     }
+
+
+    protected override void Collect()
+    {
+        OnCollect();
+    }
+
+
     private void Update()
     {
         if (collect)
