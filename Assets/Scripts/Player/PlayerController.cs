@@ -41,6 +41,7 @@ public class PlayerController : Singleton<PlayerController>
 
     private void Start()
     {
+        transform.DOScale(1, 1f).SetEase(Ease.OutBack);
         _startPosition = transform.position;
         ResetSpeed();
     }
@@ -49,6 +50,14 @@ public class PlayerController : Singleton<PlayerController>
     {
         if(_bounceHelper != null)
         _bounceHelper.Bounce();
+    }
+
+    public void OnJump()
+    {
+        transform.DOScale(0.8f, 0.2f).SetEase(Ease.InOutSine).OnComplete(() =>
+        {
+            transform.DOScale(1, 0.2f).SetEase(Ease.InOutSine);
+        });
     }
 
     void Update()
@@ -102,6 +111,15 @@ public class PlayerController : Singleton<PlayerController>
     }
 
     #region POWER UPS
+    public void OnPowerUpCollected()
+    {
+        transform.DOScale(1.2f, 0.3f).SetEase(Ease.OutBack).OnComplete(() =>
+        {
+            transform.DOScale(1, 0.3f).SetEase(Ease.OutBack);
+        });
+    }
+
+
     public void SetPowerUpText(string s)
     {
         uiTextPowerUp.text = s;
