@@ -1814,6 +1814,8 @@ MonoBehaviour:
   levelPieceBasedSetups:
   - {fileID: 11400000, guid: 9a8766e6bc17b05469fd19c6d4030a2d, type: 2}
   - {fileID: 11400000, guid: 0d32f27b5e75bf94ea9975e5715e4f15, type: 2}
+  - {fileID: 11400000, guid: 9a8766e6bc17b05469fd19c6d4030a2d, type: 2}
+  - {fileID: 11400000, guid: 0d32f27b5e75bf94ea9975e5715e4f15, type: 2}
   _index: 1
   timeBetweenPieces: 0.3
   scaleDuration: 0.1
@@ -2065,7 +2067,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f483aa589459c52458d6190e031044d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itens: []
+  itens:
+  - {fileID: 0}
   scaleDuration: 0.2
   scaleTimeBetweenPieces: 0.01
   ease: 28

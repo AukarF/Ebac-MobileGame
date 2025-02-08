@@ -31,10 +31,10 @@ public class CoinsAnimationManager : Singleton<CoinsAnimationManager>
 
     private void Update()
     {
-        /*if(Input.GetKeyDown(KeyCode.T))
+        if(Input.GetKeyDown(KeyCode.T))
         {
             StartAnimations();
-        }*/
+        }
     }
 
     public void StartAnimations()
