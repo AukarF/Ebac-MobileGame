@@ -1814,9 +1814,14 @@ MonoBehaviour:
   levelPieceBasedSetups:
   - {fileID: 11400000, guid: 9a8766e6bc17b05469fd19c6d4030a2d, type: 2}
   - {fileID: 11400000, guid: 0d32f27b5e75bf94ea9975e5715e4f15, type: 2}
-  - {fileID: 11400000, guid: 9a8766e6bc17b05469fd19c6d4030a2d, type: 2}
-  - {fileID: 11400000, guid: 0d32f27b5e75bf94ea9975e5715e4f15, type: 2}
-  - {fileID: 11400000, guid: 0d32f27b5e75bf94ea9975e5715e4f15, type: 2}
+  levelPieces:
+  - {fileID: 4685101474941336167, guid: 0923f05b1c359d7469bb91c67a115611, type: 3}
+  - {fileID: 372026048013070921, guid: c3d31f80b78b55946b0e242dd92f8d41, type: 3}
+  - {fileID: 4685101474941336167, guid: 40dfb3e5b24c5914aa2ecd0f466b06b7, type: 3}
+  - {fileID: 4685101474941336167, guid: 6c728c89305a1e14e8dfeab88eda5109, type: 3}
+  - {fileID: 4685101474941336167, guid: 769dc97ee01b86448849217e83381f2b, type: 3}
+  - {fileID: 4685101474941336167, guid: 4f64cad40fdf6c845a89d2a9230221b2, type: 3}
+  piecesNumber: 5
   _index: 1
   timeBetweenPieces: 0.3
   scaleDuration: 0.1
@@ -2070,7 +2075,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itens:
   - {fileID: 0}
-  scaleDuration: 0.2
+  scaleDuration: 0.01
   scaleTimeBetweenPieces: 0.01
   ease: 28
 --- !u!4 &1802572410

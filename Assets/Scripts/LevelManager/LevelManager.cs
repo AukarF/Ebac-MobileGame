@@ -11,6 +11,10 @@ public class LevelManager : MonoBehaviour
 
     public List<LevelPieceBasedSetup> levelPieceBasedSetups;
 
+    [Header("Pieces")]
+    public List<LevelPieceBase> levelPieces;
+    public int piecesNumber = 5;
+
     [SerializeField] private int _index;
 
     public float timeBetweenPieces = .3f;
