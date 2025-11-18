@@ -14,6 +14,7 @@ public class CoinsAnimationManager : Singleton<CoinsAnimationManager>
     public float scaleDuration = .2f;
     public float scaleTimeBetweenPieces = .1f;
     public Ease ease = Ease.OutBack;
+    private bool isAnimating = false;
 
     private void Start()
     {
@@ -29,18 +30,21 @@ public class CoinsAnimationManager : Singleton<CoinsAnimationManager>
         }
     }
 
-    private void Update()
-    { 
-       StartAnimations();   
-    }
+    //private void Update()
+    //{// 
+       //StartAnimations();//
+    //}//
 
     public void StartAnimations()
     {
-        StartCoroutine(ScalePiecesByType());
+        if (!isAnimating)
+            StartCoroutine(ScalePiecesByType());
     }
 
     IEnumerator ScalePiecesByType()
     {
+        itens.RemoveAll(x => x == null);
+
         foreach (var p in itens)
         {
             p.transform.localScale = Vector3.zero;
