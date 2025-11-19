@@ -42,6 +42,8 @@ public class ItemCollectableCoin : ItemColletableBase
             if (Vector3.Distance(transform.position, PlayerController.Instance.transform.position) <
            minDistance)
             {
+                CoinsAnimationManager.Instance.UnregisterCoin(this);
+                CoinsAnimationManager.Instance.itens.Remove(this);
                 //HideItens();
                 Destroy(gameObject);
             }

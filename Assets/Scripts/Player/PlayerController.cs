@@ -41,6 +41,7 @@ public class PlayerController : Singleton<PlayerController>
 
     private void Start()
     {
+        transform.localScale = Vector3.zero;
         transform.DOScale(1, 1f).SetEase(Ease.OutBack);
         _startPosition = transform.position;
         ResetSpeed();

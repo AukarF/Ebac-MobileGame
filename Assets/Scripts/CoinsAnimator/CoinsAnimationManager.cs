@@ -27,6 +27,7 @@ public class CoinsAnimationManager : Singleton<CoinsAnimationManager>
         {
             itens.Add(i);
             i.transform.localScale = Vector3.zero;
+            StartCoroutine(ScalePiecesByType());
         }
     }
 
@@ -37,13 +38,22 @@ public class CoinsAnimationManager : Singleton<CoinsAnimationManager>
 
     public void StartAnimations()
     {
+        itens = itens.Where(i => i != null).ToList();
         if (!isAnimating)
             StartCoroutine(ScalePiecesByType());
     }
 
+    public void UnregisterCoin(ItemCollectableCoin i)
+    {
+        if (itens.Contains(i))
+        {
+            itens.Remove(i);
+        }
+    }
+
     IEnumerator ScalePiecesByType()
     {
-        itens.RemoveAll(x => x == null);
+        itens = itens.Where(i => i != null).ToList();
 
         foreach (var p in itens)
         {
