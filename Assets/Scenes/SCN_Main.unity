@@ -1154,6 +1154,7 @@ MonoBehaviour:
   coinCollector: {fileID: 1597190826}
   animationManager: {fileID: 93916184}
   vfxDeath: {fileID: 6429149868565903689}
+  limit: 4
   _bounceHelper: {fileID: 459523513}
 --- !u!114 &459523513
 MonoBehaviour:
@@ -2826,7 +2827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4996360473407352392, guid: 614fc1a4f49c26b4d96e9e341d7bd9be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.07
+      value: 1.98
       objectReference: {fileID: 0}
     - target: {fileID: 4996360473407352392, guid: 614fc1a4f49c26b4d96e9e341d7bd9be, type: 3}
       propertyPath: m_LocalPosition.z
