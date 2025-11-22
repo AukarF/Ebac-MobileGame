@@ -49,6 +49,7 @@ public class ItemColletableBase : MonoBehaviour
 
         if (audioSource != null && audioSource.enabled)
         {
+            particleSystem.transform.SetParent(null);
             audioSource.Play();
         }
 
