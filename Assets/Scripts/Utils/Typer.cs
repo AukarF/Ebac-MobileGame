@@ -19,18 +19,7 @@ public class Typer : MonoBehaviour
         textMesh.text = "l";
     }
 
-    [Button]
-    protected virtual void Show()
-    {
-     if (!EditorApplication.isPlaying) return;
-     Debug.Log("ScreenBase SHOW Called");
-     ShowElements();
-    }
-
-    private void ShowElements()
-    {
-        throw new NotImplementedException();
-    }
+    
 
     [NaughtyAttributes.Button]
     public void StartType()
