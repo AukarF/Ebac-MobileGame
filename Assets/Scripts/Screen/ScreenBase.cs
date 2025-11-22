@@ -7,11 +7,11 @@ using DG.Tweening;
 namespace Screens
 {
 
-    public enum Screentype 
+    public enum Screentype
     {
-       Panel,
-       Info_Panel,
-       Shop
+        Panel,
+        Info_Panel,
+        Shop
     }
 
 
@@ -29,7 +29,7 @@ namespace Screens
 
         private void Start()
         {
-            if(startHided)
+            if (startHided)
             {
                 HideObjects();
             }
@@ -45,8 +45,8 @@ namespace Screens
         [Button]
         protected virtual void Hide()
         {
-            HideObjects();
             Debug.Log("Hide");
+            HideObjects();
         }
 
         private void HideObjects()
@@ -56,7 +56,7 @@ namespace Screens
 
         private void ShowObjects()
         {
-            for (int i = 0; i < listofobjects.Count; i++) 
+            for (int i = 0; i < listofobjects.Count; i++)
             {
                 var obj = listofobjects[i];
 
