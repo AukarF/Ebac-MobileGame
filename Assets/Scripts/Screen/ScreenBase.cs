@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
 using DG.Tweening;
+using UnityEditor;
+using System;
 
 namespace Screens
 {
@@ -20,12 +22,14 @@ namespace Screens
         public Screentype screentype;
 
         public List<Transform> listofobjects;
+        public List<Typer> listofphrases;
 
         public bool startHided = false;
 
         [Header("Animations")]
         public float delayBetweenObjects = 0.5f;
         public float animationDuration = 3f;
+
 
         private void Start()
         {
@@ -35,11 +39,25 @@ namespace Screens
             }
         }
 
+
+
+
         [Button]
         protected virtual void Show()
         {
+           //if (!EditorApplication.isPlaying) return;
+           //Debug.Log("ScreenBase SHOW Called");
+           //ShowElements();
+                                  
+            
+
             ShowObjects();
             Debug.Log("Show");
+        }
+
+        private void ShowElements()
+        {
+            throw new NotImplementedException();
         }
 
         [Button]
@@ -62,6 +80,17 @@ namespace Screens
 
                 obj.gameObject.SetActive(true);
                 obj.DOScale(0, animationDuration).From().SetDelay(i * delayBetweenObjects);
+            }
+
+            Invoke(nameof(StartType), delayBetweenObjects * listofobjects.Count);
+
+        }
+
+        private void StartType()
+        {
+            for (int i = 0; i < listofphrases.Count; i++)
+            {
+                listofphrases[i].StartType();
             }
         }
 

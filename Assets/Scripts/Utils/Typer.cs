@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using NaughtyAttributes;
+using UnityEditor;
+using System;
 
 public class Typer : MonoBehaviour
 {
@@ -11,20 +13,27 @@ public class Typer : MonoBehaviour
 
     public string phrase;
 
- 
-    
-    //[Button]
-    //protected virtual void Show()
-    //{
-        //if (!EditorApplication.isPlaying) return;
-        //Debug.Log("ScreenBase SHOW Called");
-        //ShowElements();
-    //}
-    
 
+    private void Awake()
+    {
+        textMesh.text = "l";
+    }
 
     [Button]
-    private void StartType()
+    protected virtual void Show()
+    {
+     if (!EditorApplication.isPlaying) return;
+     Debug.Log("ScreenBase SHOW Called");
+     ShowElements();
+    }
+
+    private void ShowElements()
+    {
+        throw new NotImplementedException();
+    }
+
+    [NaughtyAttributes.Button]
+    public void StartType()
     {
         StartCoroutine(Type(phrase));
     }
@@ -35,7 +44,7 @@ public class Typer : MonoBehaviour
         textMesh.text = "";
         foreach (char l in s.ToCharArray()) 
         {
-            textMesh.text += 1;
+            textMesh.text += l;
             yield return new WaitForSeconds(timeBetweenLetters);
         }
     }
