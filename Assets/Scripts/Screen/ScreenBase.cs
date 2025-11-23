@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
@@ -24,6 +26,7 @@ namespace Screens
         public List<Transform> listofobjects;
         public List<Typer> listofphrases;
 
+        public Image uiBackground;
         public bool startHided = false;
 
         [Header("Animations")]
@@ -70,6 +73,7 @@ namespace Screens
         private void HideObjects()
         {
             listofobjects.ForEach(i => i.gameObject.SetActive(false));
+            uiBackground.enabled = false;
         }
 
         private void ShowObjects()
@@ -83,6 +87,7 @@ namespace Screens
             }
 
             Invoke(nameof(StartType), delayBetweenObjects * listofobjects.Count);
+            uiBackground.enabled = true;
 
         }
 
@@ -97,6 +102,7 @@ namespace Screens
         private void ForceShowObjects()
         {
             listofobjects.ForEach(i => i.gameObject.SetActive(true));
+                uiBackground.enabled = true;
         }
 
     }
